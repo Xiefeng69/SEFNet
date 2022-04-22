@@ -6,7 +6,7 @@ This is the source code for Inter- and Intra-**S**eries **E**mbeddings **F**usio
 ## Dataset
 **In the folder: /data**
 
-:gift_heart:Note: the Influenza-related datasets are released by [Cola-GNN](https://github.com/amy-deng/colagnn) and the COVID-related data is publicly avaliable at [JHU-CSSE](https://github.com/CSSEGISandData/COVID-19).
+:gift_heart: Note: the Influenza-related datasets are released by [Cola-GNN](https://github.com/amy-deng/colagnn) and the COVID-related data is publicly avaliable at [JHU-CSSE](https://github.com/CSSEGISandData/COVID-19).
 
 |  Data set   | Size  |  Min  | Max  | Mean  | SD  |  Granularity
 |  ----  | ----  |  ----  | ----  |  ----  | ----  | ----  |
