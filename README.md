@@ -1,6 +1,6 @@
 # SEFNet
 
-This is the source code for Inter- and Intra-**S**eries **E**mbeddings **F**usion **Net**work for Epidemiological Forecasting (SEFNet).
+[SEKE2022] This is a PyTorch implementation of the paper: Inter- and Intra-**S**eries **E**mbeddings **F**usion **Net**work for Epidemiological Forecasting (SEFNet).
 
 
 ## Dataset
