@@ -3,7 +3,9 @@
 
 # SEFNet
 
-[SEKE2022] This is a PyTorch implementation of the paper: Inter- and Intra-**S**eries **E**mbeddings **F**usion **Net**work for Epidemiological Forecasting (SEFNet) \[[paper](http://ksiresearch.org/seke/seke22paper/paper109.pdf)\] [![visitors][visitors-img]][repo-url].
+[![visitors][visitors-img]][repo-url]
+
+[SEKE2022] This is a PyTorch implementation of the paper: Inter- and Intra-**S**eries **E**mbeddings **F**usion **Net**work for Epidemiological Forecasting (SEFNet) \[[paper](http://ksiresearch.org/seke/seke22paper/paper109.pdf)\].
 
 ## Introduction
 The accurate forecasting of infectious epidemic diseases is the key to effective control of the epidemic situation in a region. Most existing methods ignore potential dynamic dependencies between regions or the importance of temporal dependencies and inter-dependencies between regions for prediction. In this paper, we propose an Inter- and Intra-Series Embeddings Fusion Network (SEFNet) to improve epidemic prediction performance. SEFNet consists of two parallel modules, named Inter-Series Embedding Module and Intra-Series Embedding Module. In Inter-Series Embedding Module, a multi-scale unified convolution component called Region-Aware Convolution is proposed, which cooperates with self-attention to capture dynamic dependencies between time series obtained from multiple regions. The Intra-Series Embedding Module uses Long Short-Term Memory to capture temporal relationships within each time series. Subsequently, we learn the influence degree of two embeddings and fuse them with the parametric-matrix fusion method. To further improve the robustness, SEFNet also integrates a traditional autoregressive component in parallel with nonlinear neural networks. Experiments on four real-world epidemic-related datasets show SEFNet is effective and outperforms state-of-the-art baselines.
