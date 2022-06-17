@@ -50,3 +50,14 @@ python src/train.py --epochs 2000 --lr 0.01 --hw 20 --hidR 64 --hidA 64 --k 8 --
 | hidP | The ouput dimension of Adaptive Pooling |
 | lr | Learning rate |
 | hw | Look-back window of AutoRegressive component |
+
+## Citation
+```
+@inproceedings{xie2022sefnet,
+  title={Inter- and Intra-Series Embeddings Fusion Network for Epidemiological Forecasting},
+  author={Xie, Feng and Zhang, Zhong and Zhao, Xuechen and Zhou, Bin and Yu, Songtan},
+  year={2022},
+  booktitle={The 34th International Conference on Software Engineering & Knowledge Engineering},
+  organization={KSIResearch}
+}
+```
