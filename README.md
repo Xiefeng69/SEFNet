@@ -15,6 +15,8 @@ The accurate forecasting of infectious epidemic diseases is the key to effective
 
 :gift_heart: Note: the Influenza-related datasets are released by [Cola-GNN](https://github.com/amy-deng/colagnn) and the COVID-related data is publicly avaliable at [JHU-CSSE](https://github.com/CSSEGISandData/COVID-19).
 
+`/data/us-state-label.xlsx` is the corresponding index file to the `/data/state360.txt`, noting that in `/data/state360.txt`, FL (idx=8) is removed due to missing value.
+
 |  Data set   | Size  |  Min  | Max  | Mean  | SD  |  Granularity
 |  ----  | ----  |  ----  | ----  |  ----  | ----  | ----  |
 | US-Regions  |  10×785 | 0 |  16526 | 1009 | 1351 | weekly
@@ -38,6 +40,10 @@ python src/train.py --lr 0.01 --hw 20 --hidP 3 --hidR 32 --hidA 32 --k 8 --data 
 + For dataset *US-States*:
 ```shell
 python src/train.py --epochs 2000 --lr 0.01 --hw 20 --hidR 64 --hidA 64 --k 8 --data state360 --horizon 5 --gpu 0
+```
++ For dataset *Canada-Covid*
+```shell
+python src/train.py --epochs 2000 --lr 0.01 --data canada-covid --horizon 3 --gpu 0 --model model --hidA 96 --hidR 96 --hidP 1
 ```
 
 ## SEFNet's Parameters

@@ -56,7 +56,7 @@ class Model(nn.Module):
 
     def forward(self, x, feat=None):
 
-        # Intra-Region embedding
+        # Inter-Region embedding
         rac = self.rac(x)
         q = self.q_linear(rac)
         k = self.k_linear(rac)
@@ -66,13 +66,13 @@ class Model(nn.Module):
         v = nn.Dropout(p=0.2)(v)
         i = self.attn_layer(q, k, v)
 
-        # Inter-Region embedding
+        # Intra-Region embedding
         r = x.permute(0, 2, 1).contiguous().view(-1, x.size(1), 1) 
         r_out, hc = self.lstm(r, None)
         last_hid = self.dropout(r_out[:,-1,:])
         t = last_hid.view(-1,self.m, self.hidR)
 
-        # fusion
+        # parametric-matrix fusion
         i = torch.mul(self.inter, i)
         t = torch.mul(self.intra, t)
 
