@@ -61,7 +61,7 @@ python src/train.py --epochs 2000 --lr 0.01 --data canada-covid --horizon 3 --gp
 ```
 @inproceedings{xie2022sefnet,
   title={Inter- and Intra-Series Embeddings Fusion Network for Epidemiological Forecasting},
-  author={Xie, Feng and Zhang, Zhong and Zhao, Xuechen and Zhou, Bin and Yu, Songtan},
+  author={Xie, Feng and Zhang, Zhong and Zhao, Xuechen and Zhou, Bin and Tan, Yusong},
   year={2022},
   booktitle={The 34th International Conference on Software Engineering & Knowledge Engineering},
   organization={KSIResearch}
